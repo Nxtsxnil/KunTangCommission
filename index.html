@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday</title>
+  <style>
+    :root {
+      --strawberry: #ffb6b9;
+      --vanilla: #F1E7E7;
+      --chocolate: #b38b6d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--vanilla);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .card {
+      background: linear-gradient(135deg, var(--strawberry), var(--vanilla), var(--chocolate));
+      border-radius: 24px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      color: #4d2e1c;
+      border: 4px double #FFFECE;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🎕";
+      font-size: 4rem;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .card::after {
+      content: "🎔";
+      font-size: 4rem;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .card h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 4px solid #F1E7E7;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card p {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      margin: 1.5rem 0;
+    }
+
+    .card .signature {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .card h1 {
+        font-size: 2.2rem;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1> 果宝专属网站 </h1>
+    <div class="gallery">
+      <img src="images/image1.jpg" alt="image 1" />
+      <img src="images/image2.jpg" alt="image 2" />
+      <img src="images/image3.jpg" alt="image 3" />
+      <img src="images/image4.jpg" alt="image 4" />
+      <img src="images/image5.jpg" alt="image 5" />
+      <img src="images/image6.jpg" alt="image 6" />
+      <img src="images/image7.jpg" alt="image 7" />
+      <img src="images/image8.jpg" alt="image 8" />
+    </div>
+    <p> 果果 ， 我们在一起也一个月了，其实这个月很重要哦，比较一般来说都是起步难，虽然说我们度过的时光不多，但是以后生活，想听见你的笑声，想听见你的幻想，想看见你对我笑。
+我也很明白，我们度过的时间也有很多的不同，但是我们之间的喜欢跟爱好都不一样，我会宠着你。</p>
+    <p> 果果 ， 你对于我的世界来说，是完整的，需要一个你来照亮我的世界，爱护你喜欢你，以及想要保护你的想法，在我脑海里迟迟不去，对于我对于你来说，这可能是我们之间的缘分。以后的时间，以后的未来，以及明日，你都会有我哦
+还有别忘记了，我们的大娃叫唐皮哦，有我很皮嘛这个就看她啰
+我会一直一直喜欢你，一直一直保护你，答应你，就要负责
+我要负责，对你负责到最后，不要觉得我任性，我想爱护你。</p>
+    <p class="signature"> 果宝。是属于你的告白<br/>Kun Tang</p>
+  </div>
+</body>
+
+</html>
